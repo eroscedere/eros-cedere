@@ -24,7 +24,7 @@ const models = [
       "https://fapello.com/content/t/r/triz-pariz/1000/triz-pariz_0214.jpg",
       "https://fapello.com/content/t/r/triz-pariz/1000/triz-pariz_0215.jpg",
       "https://images4.imagebam.com/39/02/c6/MEONJFL_o.jpg",
-      "https://simp6.jpg5.su/images/20220305_125411_3412097.jpg",
+      "https://pbs.twimg.com/media/FNGN4c2XoAU6u76.jpg",
       
       //2
       "",
