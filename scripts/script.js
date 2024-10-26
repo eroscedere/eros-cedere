@@ -25,7 +25,7 @@ const models = [
       "https://fapello.com/content/t/r/triz-pariz/1000/triz-pariz_0215.jpg",
       "https://images4.imagebam.com/39/02/c6/MEONJFL_o.jpg",
       "https://pbs.twimg.com/media/FNGN4c2XoAU6u76.jpg",
-      
+
       //2
       "",
       //3
@@ -133,11 +133,23 @@ const modelImages = (num) => {
 
   modelFotos.innerHTML = "";
 
-  models[num].fotos.forEach((e) => {
+  models[num].fotos.forEach((e, i) => {
     const div = document.createElement("div");
     modelFotos.appendChild(div);
     div.style.backgroundImage = `url(${e})`;
+    div.addEventListener("click", () => {
+      showImage(num, i);
+    });
   });
 
   changePage(1);
 };
+
+const srcImage = document.getElementById("showImage");
+
+const showImage = (num, i) => {
+  changePage(2);
+  srcImage.src = models[num].fotos[i]
+};
+
+
